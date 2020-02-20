@@ -7,17 +7,17 @@
 
 <div>
   <label for="">Use Letters</label>
-  <input type="checkbox" name="" id="" />
+  <input (change)="onChangeUseLetters()" type="checkbox" name="" id="" />
 </div>
 
 <div>
   <label for="">Use Numbers</label>
-  <input type="checkbox" name="" id="" />
+  <input (change)="onChangeUseNumbers()" type="checkbox" name="" id="" />
 </div>
 
 <div>
   <label for="">Use Symbol</label>
-  <input type="checkbox" name="" id="" />
+  <input (change)="onChangeUseSymbol()" type="checkbox" name="" id="" />
 </div>
 
 <button (click)="onButtonClick()">Generate!</button>
