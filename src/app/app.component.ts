@@ -10,7 +10,7 @@ export class AppComponent {
   password = "";
   includeLetters = false;
   includeNumbers = false;
-  includeSymbol = false;
+  includeSymbols = false;
 
   onChangeLength(value: string) {
     const parsedValue = parseInt(value);
@@ -28,8 +28,8 @@ export class AppComponent {
     this.includeNumbers = !this.includeNumbers;
   }
 
-  onChangeUseSymbol() {
-    this.includeSymbol = !this.includeSymbol;
+  onChangeUseSymbols() {
+    this.includeSymbols = !this.includeSymbols;
   }
 
   onButtonClick() {
@@ -44,7 +44,7 @@ export class AppComponent {
     if (this.includeLetters) {
       validChars += letters;
     }
-    if (this.includeSymbol) {
+    if (this.includeSymbols) {
       validChars += symbols;
     }
 
